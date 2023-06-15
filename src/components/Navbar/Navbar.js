@@ -2,21 +2,40 @@ import React from "react";
 import Logo from "../../assets/Logo.png";
 import { Link } from "react-router-dom";
 import NavbarLinks from "./NavbarLinks";
+import Button from "../Button";
 
 const Navbar = () => {
   return (
     <nav className="bg-white ">
       <div className="flex items-center font-medium justify-around">
-        <div>
+        <div className="z-50 p-5 md:w-auto w-full ">
           <img src={Logo} alt="logo" className="md:cursor-pointer h-9  " />
         </div>
-        <ul className="flex uppercase items-center gap-8 font-[poppins]">
+        <ul className="md:flex hidden uppercase items-center gap-8 font-[poppins]">
           <li>
             <Link className="py-7 px-3 inline-block" to="/">
               Home
             </Link>
           </li>
           <NavbarLinks />
+        </ul>
+        <div className="md:block hidden">
+            <Button/>
+        </div>
+
+        {/* mobile nav */}
+        <ul className={`
+        md:hidden bg-white  w-full h-full button-0 py-24 pl-4
+        `}>
+          <li>
+            <Link className="py-7 px-3 inline-block" to="/">
+              Home
+            </Link>
+          </li >
+          <NavbarLinks />
+          <div className="py-5">
+            <Button/>
+        </div>
         </ul>
       </div>
     </nav>
