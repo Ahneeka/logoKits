@@ -18,44 +18,44 @@ const NavbarLinks = () => {
       {
         Head:"Bottomwear",
         sublink:[
-          {name:"T-shirt", link:"/"},
-          {name:"Casual shirt", link:"/"},
-          {name:"Formal shirt", link:"/"},
-          {name:"Traditional wear", link:"/"},
-          {name:"Igbo wear", link:"/"}
+          {name:"Trouser", link:"/"},
+          {name:"Jeans", link:"/"},
+          {name:"Cago pants", link:"/"},
+          {name:"Breeches", link:"/"},
+          {name:"Tracksuit bottom", link:"/"}
         ]
       },
 
       {
         Head:"Innerwear",
         sublink:[
-          {name:"T-shirt", link:"/"},
-          {name:"Casual shirt", link:"/"},
-          {name:"Formal shirt", link:"/"},
-          {name:"Traditional wear", link:"/"},
-          {name:"Igbo wear", link:"/"}
+          {name:"Boxers", link:"/"},
+          {name:"Boxer Briefs", link:"/"},
+          {name:"Trunks", link:"/"},
+          {name:"Tanga", link:"/"},
+          {name:"Jockstrap", link:"/"}
         ]
       },
 
       {
         Head:"sleep wear",
         sublink:[
-          {name:"T-shirt", link:"/"},
-          {name:"Casual shirt", link:"/"},
-          {name:"Formal shirt", link:"/"},
-          {name:"Traditional wear", link:"/"},
-          {name:"Igbo wear", link:"/"}
+          {name:"Linen pajamas", link:"/"},
+          {name:"Cotton pajamas", link:"/"},
+          {name:"Silk pajamas", link:"/"},
+          {name:"Fleece pajams", link:"/"},
+          {name:"Satin pajams", link:"/"}
         ]
       },
 
       {
         Head:"foot wear",
         sublink:[
-          {name:"T-shirt", link:"/"},
-          {name:"Casual shirt", link:"/"},
-          {name:"Formal shirt", link:"/"},
-          {name:"Traditional wear", link:"/"},
-          {name:"Igbo wear", link:"/"}
+          {name:"Oxford", link:"/"},
+          {name:"sneakers", link:"/"},
+          {name:"Loafer", link:"/"},
+          {name:"Brogues", link:"/"},
+          {name:"Mule", link:"/"}
         ]
       }
 
@@ -75,11 +75,11 @@ const NavbarLinks = () => {
       {
         Head:"Bottomwear",
         sublink:[
-          {name:"T-shirt", link:"/"},
-          {name:"Casual shirt", link:"/"},
-          {name:"Formal shirt", link:"/"},
-          {name:"Traditional wear", link:"/"},
-          {name:"Igbo wear", link:"/"}
+          {name:"Trouser", link:"/"},
+          {name:"Jeans", link:"/"},
+          {name:"Cago pants", link:"/"},
+          {name:"Breeches", link:"/"},
+          {name:"Tracksuit bottom", link:"/"}
         ]
       },
 
