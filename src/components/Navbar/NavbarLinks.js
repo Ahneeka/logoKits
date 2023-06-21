@@ -78,7 +78,7 @@ const NavbarLinks = () => {
           {name:"Bell bottoms", link:"/"},
           {name:"culottes", link:"/"},
           {name:"Harem pants", link:"/"},
-          {name:"Tracksuit bottom", link:"/"}
+          {name:"palazzo pants", link:"/"}
         ]
       },
 
