@@ -77,7 +77,7 @@ const NavbarLinks = () => {
         sublink:[
           {name:"Bell bottoms", link:"/"},
           {name:"culottes", link:"/"},
-          {name:"Breeches", link:"/"},
+          {name:"Harem pants", link:"/"},
           {name:"Tracksuit bottom", link:"/"}
         ]
       },
