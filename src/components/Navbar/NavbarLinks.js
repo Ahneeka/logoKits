@@ -89,7 +89,7 @@ const NavbarLinks = () => {
           {name:"Bra", link:"/"},
           {name:"Undies", link:"/"},
           {name:"Bralette", link:"/"},
-          {name:"Igbo wear", link:"/"}
+          {name:"Chemise", link:"/"}
         ]
       },
 
