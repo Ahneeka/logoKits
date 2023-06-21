@@ -87,7 +87,7 @@ const NavbarLinks = () => {
         sublink:[
           {name:"Thong", link:"/"},
           {name:"Bra", link:"/"},
-          {name:"Formal shirt", link:"/"},
+          {name:"Undies", link:"/"},
           {name:"Traditional wear", link:"/"},
           {name:"Igbo wear", link:"/"}
         ]
