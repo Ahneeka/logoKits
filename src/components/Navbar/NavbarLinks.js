@@ -85,8 +85,8 @@ const NavbarLinks = () => {
       {
         Head:"Innerwear",
         sublink:[
-          {name:"T-shirt", link:"/"},
-          {name:"Casual shirt", link:"/"},
+          {name:"Thong", link:"/"},
+          {name:"Bra", link:"/"},
           {name:"Formal shirt", link:"/"},
           {name:"Traditional wear", link:"/"},
           {name:"Igbo wear", link:"/"}
