@@ -10,8 +10,16 @@ const NavbarLinks = () => {
       {links.map((link) => (
         <div>
           <div className="px-3 text-left md:cursor-pointer  group">
-            <h1 className="py-7 " onClick={()=>heading !== link.name ? setHeading(link.name) : setHeading(" ")}>
+            <h1 
+            className="py-7 " 
+            onClick={()=>{
+              heading !== link.name ? setHeading(link.name) : setHeading(" "); setSubHeading("");
+              }}
+              >
               {link.name}
+              <span className="text-xl  md:mt-1 md:ml-2 inline">
+                <ion-icon name="chevron-up"></ion-icon>
+              </span>
             </h1>
            
             {link.submenu && (
@@ -56,7 +64,9 @@ const NavbarLinks = () => {
                     >
                       {slinks.Head}
                     </h1>
-                    <div className={}>
+                    <div className={`${
+                      subheading === slinks.Head ? "md:hidden" : "hidden"
+                    }`}>
                       {slinks.sublink.map (slink =>(
                         <li className="py-3 pl-14">
                           <Link to={slink.link}>
