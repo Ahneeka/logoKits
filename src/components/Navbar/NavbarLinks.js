@@ -9,8 +9,10 @@ const NavbarLinks = () => {
       {links.map((link) => (
         <div>
           <div className="px-3 text-left md:cursor-pointer  group">
-            <h1 className="py-7 ">{link.name}</h1>
-
+            <h1 className="py-7 " onClick={()=>setHeading(link.name)}>
+              {link.name}
+            </h1>
+           
             {link.submenu && (
               <div>
                 <div className="absolute top-20 hidden group-hover:md:block hover:md:block">
@@ -36,7 +38,10 @@ const NavbarLinks = () => {
             )}
           </div>
           {/* mobile menu */}
-          <div>
+          <div className={`
+          ${heading===link.name ? "md:hidden" : "hidden"}
+          `}>
+            {/*   */}
             {
               link.sublinks.map((slinks)=>(
                 <div>
