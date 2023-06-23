@@ -42,16 +42,21 @@ const NavbarLinks = () => {
           <div className={`
           ${heading===link.name ? "md:hidden" : "hidden"}
           `}>
-            {/*   */}
+            {/* sublink  */}
             {
               link.sublinks.map((slinks)=>(
                 <div>
                   <div>
                     <h1 onClick={()=>
-                    subheading !==slinks.Head ? setSubHeading(slinks.Head) : setSubHeading("")} className="py-4 pl-7 font-semibold md:pr-0 md:pr-5">
+                    subheading !==slinks.Head 
+                    ? setSubHeading(slinks.Head) 
+                    : setSubHeading("")
+                    } 
+                    className="py-4 pl-7 font-semibold md:pr-0 md:pr-5"
+                    >
                       {slinks.Head}
                     </h1>
-                    <div>
+                    <div className={}>
                       {slinks.sublink.map (slink =>(
                         <li className="py-3 pl-14">
                           <Link to={slink.link}>
