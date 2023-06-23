@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { links } from "./Mylinks"
 
 const NavbarLinks = () => {
+  const [heading, setHeading]= useState("") 
   return (
     <>
       {links.map((link) => (
@@ -40,7 +41,18 @@ const NavbarLinks = () => {
               link.sublinks.map((slinks)=>(
                 <div>
                   <div>
-                    <h1 className="py-4 pl-7 font-semibold md:pr-0 md:pr-5">{slinks.Head}</h1>
+                    <h1 className="py-4 pl-7 font-semibold md:pr-0 md:pr-5">
+                      {slinks.Head}
+                    </h1>
+                    <div>
+                      {slinks.sublink.map (slink =>(
+                        <li className="py-3 pl-14">
+                          <Link to={slink.link}>
+                            {slink.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </div>
                   </div>
                 </div>
               ))
