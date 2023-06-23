@@ -11,14 +11,17 @@ const NavbarLinks = () => {
         <div>
           <div className="px-3 text-left md:cursor-pointer  group">
             <h1 
-            className="py-7 " 
+            className="py-7 flex justify-between items-center md:pr-0 pr-5 " 
             onClick={()=>{
               heading !== link.name ? setHeading(link.name) : setHeading(" "); setSubHeading("");
               }}
               >
               {link.name}
               <span className="text-xl  md:mt-1 md:ml-2 inline">
-                <ion-icon name="chevron-up"></ion-icon>
+                <ion-icon name={`"${
+                  heading === link.name ?"chevron-up" : "chevron-down"
+                  }`}>
+                  </ion-icon>
               </span>
             </h1>
            
@@ -63,6 +66,12 @@ const NavbarLinks = () => {
                     className="py-4 pl-7 font-semibold md:pr-0 md:pr-5"
                     >
                       {slinks.Head}
+              <span className="text-xl  md:mt-1 md:ml-2 inline">
+                <ion-icon name={`"${
+                  subheading === slinks.Head ?"chevron-up" : "chevron-down"
+                  }`}>
+                  </ion-icon>
+              </span>
                     </h1>
                     <div className={`${
                       subheading === slinks.Head ? "md:hidden" : "hidden"
