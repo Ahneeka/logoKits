@@ -11,16 +11,22 @@ const NavbarLinks = () => {
         <div>
           <div className="px-3 text-left md:cursor-pointer  group">
             <h1 
-            className="py-7 flex justify-between items-center md:pr-0 pr-5 " 
+            className="py-7 flex justify-between items-center md:pr-0 pr-5 group" 
             onClick={()=>{
               heading !== link.name ? setHeading(link.name) : setHeading(" "); setSubHeading("");
               }}
               >
               {link.name}
-              <span className="text-xl  md:mt-1 md:ml-2 inline">
+              <span className="text-xl  md:hidden inline">
                 <ion-icon name={`"${
                   heading === link.name ?"chevron-up" : "chevron-down"
                   }`}>
+                  </ion-icon>
+              </span>
+
+              <span className="text-xl  md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
+                <ion-icon name=
+                  "chevron-down">
                   </ion-icon>
               </span>
             </h1>
@@ -63,7 +69,7 @@ const NavbarLinks = () => {
                     ? setSubHeading(slinks.Head) 
                     : setSubHeading("")
                     } 
-                    className="py-4 pl-7 font-semibold md:pr-0 md:pr-5"
+                    className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center "
                     >
                       {slinks.Head}
               <span className="text-xl  md:mt-1 md:ml-2 inline">
@@ -78,7 +84,7 @@ const NavbarLinks = () => {
                     }`}>
                       {slinks.sublink.map (slink =>(
                         <li className="py-3 pl-14">
-                          <Link to={slink.link}>
+                          <Link to={slink.link} className="hover:text-blue-600">
                             {slink.name}
                           </Link>
                         </li>
