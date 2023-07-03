@@ -118,8 +118,8 @@ export  const links = [
         Head:"Topwear",
         sublink:[
           {name:"T-shirt", link:"/"},
-          {name:"Casual shirt", link:"/"},
-          {name:"Formal shirt", link:"/"},
+          {name:"Breeze shirt", link:"/"},
+          {name: "Toontoy shirt", link:"/"},
           {name:"Traditional wear", link:"/"},
           {name:"Igbo wear", link:"/"}
         ]
